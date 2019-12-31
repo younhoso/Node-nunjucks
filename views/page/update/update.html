@@ -1,0 +1,15 @@
+{% include "component/header.html" %}
+{% include "component/nav.html" %}
+    <form action="/update/update_process" method="post">
+        <input type="hidden" name="id" value={{tit}}>
+        <p>
+            <input type="text" name="title" placeholder="title" value={{tit}}>
+        </p>
+        <p>
+            <textarea name="description" placeholder="description" cols="30" rows="10">{{desc}}</textarea>
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+{% include "component/footer.html" %} 

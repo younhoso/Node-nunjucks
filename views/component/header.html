@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	    <title>{{message}}</title>
+		<meta charset="utf-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=2.0, user-scalable=yes'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+        <!--favicon icon-->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- 검색로봇 검색 허용 -->
+        <meta name='title' content='트리플액스랩(TRIPLEXLAB)'>
+        <meta name='description' content='TRIPLEXLAB INDIVIDUAL SITE'>
+        <meta name='twitter:card' value='summary'>
+        <meta name='author' content='트리플액스랩(TRIPLEXLAB)'>
+        <!-- SNS 검색로봇 검색 허용 -->
+        <meta name='msapplication-starturl' content='http://www.triplexlab.co.kr/'>
+        <meta name='robots' content='index,follow'>
+        <meta property='og:title' content='트리플액스랩(TRIPLEXLAB)'>
+        <meta property='og:type' content='TRIPLEXLAB_SITE'>
+        <meta property='og:image' content='http://www.triplexlab.co.kr/views-pc/images/triplexlab-logo.jpg'>
+        <meta property='og:url' content='http://www.triplexlab.co.kr/'>
+        <meta property='og:description' content='TRIPLEXLAB INDIVIDUAL SITE'>
+        <meta name='author' content='트리플액스랩 | TRIPLEXLAB | 웹에이전시 | 브랜딩'>
+        <meta name='application-name' content='트리플액스랩 | TRIPLEXLAB | 웹에이전시 | 브랜딩'>
+        <meta name='msapplication-tooltip' content='트리플액스랩 | TRIPLEXLAB | 웹에이전시 | 브랜딩'>
+        <!-- 선호 URL (대표 URL) -->
+		<link rel='canonical' href='http://www.triplexlab.co.kr/'>
+        <!-- 모바일 디바이스 채크 -->
+        <!-- <script language="JavaScript" type="text/JavaScript">
+            var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+            for (var word in mobileKeyWords){
+                if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+                parent.window.location.href='views-mobile/index.html';
+                break;
+                }
+            }
+        </script> -->
+        <!--DESIGN CSS-->
+        <link rel="stylesheet" href="">
+    </head>
+	<body data-them="moon">
+        <header class="header">
+            <div class="logo__inner">
+                <a href="/"><img class="thumb" src="/views-pc/images/logo-wh.png" alt="triplexlab"></a>
+            </div>
+            <menu class="menu__inner">
+                <nav class="pop clearfix">
+                    <ul class="pop__list">
+                    {% for list in lists %}
+                        <li><a href="/page/{{list}}">{{list}}</a></li>
+                    {% endfor %}
+                    </ul>
+                </nav>
+            </menu>
+            <div class="icon__inner">
+                <i class="icon-moon-inv" data-them="sun"></i>
+            </div>
+            
+        </header>
