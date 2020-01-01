@@ -1,5 +1,11 @@
 <nav>
 	<a href="/create" class="active">create</a>
+	{% if tit %}
 	<a href="/update/{{tit}}" class="active">update</a> 
-	<!-- <a href="#"{%if pageVar.pageNum == '3' %} class="active"{% endif %}>Contact</a> -->
+	<form action="/delete/delete_process" method="post">
+		<input type="hidden" name="id" value={{tit}}>
+		<input type="submit" value="delete">
+	</form>
+	{% else %}
+	{% endif %}
 </nav>

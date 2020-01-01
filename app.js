@@ -9,6 +9,7 @@ var admin = require('./routes/admin');
 var page = require('./routes/page');
 var create = require('./routes/create');
 var update = require('./routes/update');
+var deletes = require('./routes/delete');
 
 
 var app = express();
@@ -30,6 +31,7 @@ app.use('/admin', admin);
 app.use('/about', page);
 app.use('/create', create);
 app.use('/update', update);
+app.use('/delete', deletes);
 
 app.listen( port, function(){
     console.log(`Example app listening on port ${port}! http://localhost:${port}`);
